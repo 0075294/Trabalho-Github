@@ -1,0 +1,22 @@
+def verificar_positivo_negativo(numero):
+    """
+    Função que verifica se um número é positivo, negativo ou igual a zero.
+
+    Parâmetros:
+    - numero: Um número real.
+
+    Retorna:
+    1 se o número é positivo,
+    -1 se o número é negativo,
+    0 se o número é igual a zero.
+    """
+    if numero > 0:
+        return 1
+    elif numero < 0:
+        return -1
+    else:
+        return 0
+
+numero_teste = float(input("Digite um número: "))  # Você pode fornecer um número para testar
+resultado = verificar_positivo_negativo(numero_teste)
+print(f"Resultado: {resultado}")
