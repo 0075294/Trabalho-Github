@@ -1,0 +1,22 @@
+def gerar_linhas_exclamacao(n):
+    """
+    Função que gera n linhas com pontos de exclamação.
+
+    Parâmetros:
+    - n: Número inteiro representando a quantidade de linhas.
+
+    Retorna:
+    Uma string contendo as linhas com pontos de exclamação.
+    """
+    if n <= 0:
+        return "Por favor, forneça um valor positivo para n."
+
+    linhas = ""
+    for i in range(1, n + 1):
+        linhas += "!" * i + "\n"
+
+    return linhas
+
+n = 5
+saida = gerar_linhas_exclamacao(n)
+print(saida)
