@@ -1,0 +1,28 @@
+def gerar_triangulo_lateral(n):
+    """
+    Função que gera um triângulo lateral com altura 2n-1 e largura n.
+
+    Parâmetros:
+    - n: Número inteiro representando a largura do triângulo.
+
+    Retorna:
+    Uma string representando o triângulo lateral.
+    """
+    if n <= 0:
+        return "Por favor, forneça um valor positivo para n."
+
+    triangulo = ""
+    
+    for i in range(1, n + 1):
+        linha = "*" * i
+        triangulo += linha + "\n"
+
+    for i in range(n - 1, 0, -1):
+        linha = "*" * i
+        triangulo += linha + "\n"
+
+    return triangulo
+
+n = 4
+saida = gerar_triangulo_lateral(n)
+print(saida)
